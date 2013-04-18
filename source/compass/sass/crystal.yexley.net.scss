@@ -1,0 +1,210 @@
+@import "compass";
+@import "normalize";
+@import "grid";
+
+$base-color: adjust-lightness(#000, 2%);
+$base-font-color: #bbb;
+$link-color: #00b7ff;
+$link-hover-color: #eee;
+$visited-link-color: adjust-lightness($link-color, -10%);
+
+* {
+	font-weight: 100;
+	position: relative;
+
+	@include box-sizing(border-box);
+}
+
+body {
+	background: adjust-lightness($base-color, 10%);
+	color: $base-font-color;
+	font-family: "Ubuntu", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", Tahoma, Arial, Helvetica, Sans-Serif;
+}
+
+a, a:link {
+	color: $link-color;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+
+	&:visited {
+		color: $visited-link-color;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+::-webkit-input-placeholder { color: adjust-lightness($base-font-color, -50%); }
+::-moz-placeholder { color: adjust-lightness($base-font-color, -50%); }
+:-ms-input-placeholder { color: adjust-lightness($base-font-color, -50%); }
+input:-moz-placeholder { color: adjust-lightness($base-font-color, -50%); }
+
+ul.no-bullets {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header#top {
+	margin: 0 0 10px 0;
+	padding: 3px 20px;
+
+	@include background-image(linear-gradient(adjust-lightness($base-color, 20%), $base-color));
+
+	a#header-home-link {
+		color: #888;
+	}
+
+	h1#title {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+#main-content {
+	@include column(12);
+}
+
+/*
+#home-options {
+	padding: 10% 0;
+
+	li {
+		padding: 0.15em 5%;
+		text-align: center;
+	}
+
+	a.button {
+		color: $base-color;
+		display: block;
+		font-size: 1.75em;
+		font-weight: 200;
+		margin: 20px auto 50px auto;
+		padding: 15px 0;
+		text-align: center;
+		text-decoration: none;
+
+		@include background-image(linear-gradient(adjust-lightness($link-color, 15%), adjust-lightness($link-color, -15%)));
+		@include border-radius(7px);
+		@include box-shadow(2px 3px 10px 1px rgba(0, 0, 0, 1)); // drop shadow
+		@include text-shadow(1px 1px 2px rgba($base-color, 0.5));
+
+		&:hover {
+			@include background-image(linear-gradient(adjust-lightness($link-color, -15%), adjust-lightness($link-color, 15%)));
+		}
+	}
+}
+
+#login-view, #request-access-view {
+	margin: 3%;
+
+	@include border-radius(10px);
+	@include background-image(linear-gradient(adjust-lightness($base-color, 25%), adjust-lightness($base-color, 20%)));
+	@include box-shadow(2px 3px 10px 1px rgba(0, 0, 0, 0.75)); // drop shadow
+
+	header, footer {
+		padding: 10px 20px;
+	}
+
+	section {
+		padding: 20px;
+	}
+
+	header {
+		@include background-image(linear-gradient(adjust-lightness($base-color, 20%), adjust-lightness($base-color, 15%)));
+		@include border-radius(10px 10px 0 0);
+
+		h2 {
+			margin: 0;
+
+			@include text-shadow(2px 2px 3px rgba($base-color, 0.85));
+		}
+	}
+
+	li {
+		margin: 0 0 0.75em 0;
+	}
+
+	label {
+		display: block;
+
+		@include text-shadow(1px 1px 2px rgba($base-color, 0.5));
+	}
+
+	input[type="text"], input[type="password"], input[type="email"] {
+		background: adjust-lightness($base-color, 6%);
+		border: none;
+		color: adjust-lightness($base-color, 50%);
+		padding: 0.2em 0.5em 0.25em 0.4em;
+		width: 93%;
+
+		@include border-radius(5px);
+	}
+
+	footer {
+		* {
+			float: right;
+		}
+
+		@include clearfix;
+		@include background-image(linear-gradient(adjust-lightness($base-color, 15%), adjust-lightness($base-color, 20%)));
+		@include border-radius(0 0 10px 10px);
+
+		input[type="button"] {
+			border: none;
+			color: $base-font-color;
+			height: 32px;
+			padding: 0 20px;
+
+			@include background-image(linear-gradient(adjust-lightness($base-color, 12%), $base-color));
+			@include border-radius(16px);
+
+			&:hover {
+				@include background-image(linear-gradient($base-color, adjust-lightness($base-color, 12%)));
+			}
+		}
+	}
+}
+*/
+
+@media (min-width: 768px) {
+	header#top {
+		margin: 0 0 20px 0;
+	}
+
+/*
+	#home-options {
+		@include column(4);
+		@include push(4);
+
+		a.button {
+			width: 80%;
+		}
+	}
+
+	#login-view, #request-access-view {
+		@include column(4);
+		@include push(4);
+
+		margin-top: 15%;
+
+		li {
+			@include clearfix;
+		}
+
+		label {
+			float: left;
+			width: 35%;
+		}
+
+		input[type="text"], input[type="password"], input[type="email"] {
+			float: left;
+			margin: 0 0 0 1%;
+			max-width: 55%;
+		}
+	}
+*/
+}
