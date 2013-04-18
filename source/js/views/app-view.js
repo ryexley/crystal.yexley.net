@@ -10,13 +10,15 @@ define([
 		attributes: { id: "app-view" },
 
 		events: {
-			"click .page": "testFunctionRemoveMe"
+			// "click .page": "testFunctionRemoveMe"
 		},
 
 		initialize: function () {
-			_.bindAll(this, "render", "setPageSize", "testFunctionRemoveMe");
+			_.bindAll(this, "render", "setPageSize", "setSelectedPage");
 			this.render();
+			this.setSelectedPage();
 			this.window.on("resize", this.setPageSize);
+			this.window.on("hashchange", this.setSelectedPage);
 		},
 
 		render: function () {
@@ -25,21 +27,24 @@ define([
 			this.$el.empty().append(content);
 			this.$el.prependTo("body");
 			this.setPageSize();
-			this.pages = new Swipe(document.getElementById("app-view"), {
-				callback: function (index, el) {
-					// window.location.hash = $(el).prop("id");
-					// TODO: need to update the window location and browser history with the selected hash (element ID) here.
-				}
-			});
-			// TODO: check window.location for a hash and navigate to the appropriate page if the hash matches an existing page
+			this.pages = new Swipe(document.getElementById("app-view"));
 		},
 
 		setPageSize: function (e) {
 			this.$(".page").css({ height: this.window.height(), width: this.window.width() });
 		},
 
-		testFunctionRemoveMe: function (e) {
-			this.pages.next();
+		setSelectedPage: function () {
+			var requestedPage = window.location.hash;
+
+			if (requestedPage) {
+				requestedPage = requestedPage.replace("#", "").replace("/", "");
+				this.pages.slide($("#" + requestedPage).data("index"));
+			} else {
+				if (this.pages.getPos() !== 0) {
+					this.pages.slide(0);
+				}
+			}
 		}
 	});
 
