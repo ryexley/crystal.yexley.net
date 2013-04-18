@@ -10,7 +10,6 @@ define([
 		attributes: { id: "app-view" },
 
 		events: {
-			// "click .page": "testFunctionRemoveMe"
 		},
 
 		initialize: function () {
@@ -27,7 +26,29 @@ define([
 			this.$el.empty().append(content);
 			this.$el.prependTo("body");
 			this.setPageSize();
-			this.pages = new Swipe(document.getElementById("app-view"));
+			this.setupPager();
+		},
+
+		setupPager: function () {
+			var self = this;
+
+			this.pages = new Swipe(document.getElementById("app-view"), {
+				callback: function (index, el) {
+					self.swiping = true;
+
+					var hash = "#";
+					var targetPage = $(el);
+
+					if (targetPage.data("index") !== 0) {
+						hash = "#/" + $(el).prop("id");
+					}
+
+					window.location.hash = hash;
+				},
+				transitionEnd: function (index, el) {
+					self.swiping = false;
+				}
+			});
 		},
 
 		setPageSize: function (e) {
@@ -35,14 +56,16 @@ define([
 		},
 
 		setSelectedPage: function () {
-			var requestedPage = window.location.hash;
+			if (!this.swiping) {
+				var requestedPage = window.location.hash;
 
-			if (requestedPage) {
-				requestedPage = requestedPage.replace("#", "").replace("/", "");
-				this.pages.slide($("#" + requestedPage).data("index"));
-			} else {
-				if (this.pages.getPos() !== 0) {
-					this.pages.slide(0);
+				if (requestedPage) {
+					requestedPage = requestedPage.replace("#", "").replace("/", "");
+					this.pages.slide($("#" + requestedPage).data("index"));
+				} else {
+					if (this.pages.getPos() !== 0) {
+						this.pages.slide(0);
+					}
 				}
 			}
 		}
