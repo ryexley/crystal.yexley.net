@@ -194,58 +194,114 @@ header#top h1#title { display: inline-block; margin: 0; }
 #main-content { display: inline; float: left; width: 97.91667%; margin: 0 1.04167%; }
 
 /* line 71, ../compass/sass/crystal.yexley.net.scss */
-#home-options { padding: 10% 0; }
-/* line 74, ../compass/sass/crystal.yexley.net.scss */
-#home-options li { padding: 0.15em 5%; text-align: center; }
-/* line 79, ../compass/sass/crystal.yexley.net.scss */
-#home-options a.button { color: #050505; display: block; font-size: 1.75em; font-weight: 200; margin: 20px auto 50px auto; padding: 15px 0; text-align: center; text-decoration: none; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4dcdff), color-stop(100%, #0080b3)); background-image: -webkit-linear-gradient(#4dcdff, #0080b3); background-image: -moz-linear-gradient(#4dcdff, #0080b3); background-image: -o-linear-gradient(#4dcdff, #0080b3); background-image: linear-gradient(#4dcdff, #0080b3); -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; -webkit-box-shadow: 2px 3px 10px 1px black; -moz-box-shadow: 2px 3px 10px 1px black; box-shadow: 2px 3px 10px 1px black; text-shadow: 1px 1px 2px rgba(5, 5, 5, 0.5); }
-/* line 94, ../compass/sass/crystal.yexley.net.scss */
-#home-options a.button:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0080b3), color-stop(100%, #4dcdff)); background-image: -webkit-linear-gradient(#0080b3, #4dcdff); background-image: -moz-linear-gradient(#0080b3, #4dcdff); background-image: -o-linear-gradient(#0080b3, #4dcdff); background-image: linear-gradient(#0080b3, #4dcdff); }
+.swipe { overflow: hidden; visibility: hidden; position: relative; }
 
-/* line 100, ../compass/sass/crystal.yexley.net.scss */
-#login-view, #request-access-view { margin: 3%; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #454545), color-stop(100%, #383838)); background-image: -webkit-linear-gradient(#454545, #383838); background-image: -moz-linear-gradient(#454545, #383838); background-image: -o-linear-gradient(#454545, #383838); background-image: linear-gradient(#454545, #383838); -webkit-box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.75); -moz-box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.75); box-shadow: 2px 3px 10px 1px rgba(0, 0, 0, 0.75); }
-/* line 107, ../compass/sass/crystal.yexley.net.scss */
-#login-view header, #login-view footer, #request-access-view header, #request-access-view footer { padding: 10px 20px; }
-/* line 111, ../compass/sass/crystal.yexley.net.scss */
-#login-view section, #request-access-view section { padding: 20px; }
-/* line 115, ../compass/sass/crystal.yexley.net.scss */
-#login-view header, #request-access-view header { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383838), color-stop(100%, #2b2b2b)); background-image: -webkit-linear-gradient(#383838, #2b2b2b); background-image: -moz-linear-gradient(#383838, #2b2b2b); background-image: -o-linear-gradient(#383838, #2b2b2b); background-image: linear-gradient(#383838, #2b2b2b); -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; -o-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; }
-/* line 119, ../compass/sass/crystal.yexley.net.scss */
-#login-view header h2, #request-access-view header h2 { margin: 0; text-shadow: 2px 2px 3px rgba(5, 5, 5, 0.85); }
-/* line 126, ../compass/sass/crystal.yexley.net.scss */
-#login-view li, #request-access-view li { margin: 0 0 0.75em 0; }
-/* line 130, ../compass/sass/crystal.yexley.net.scss */
-#login-view label, #request-access-view label { display: block; text-shadow: 1px 1px 2px rgba(5, 5, 5, 0.5); }
-/* line 136, ../compass/sass/crystal.yexley.net.scss */
-#login-view input[type="text"], #login-view input[type="password"], #login-view input[type="email"], #request-access-view input[type="text"], #request-access-view input[type="password"], #request-access-view input[type="email"] { background: #141414; border: none; color: #858585; padding: 0.2em 0.5em 0.25em 0.4em; width: 93%; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
-/* line 146, ../compass/sass/crystal.yexley.net.scss */
-#login-view footer, #request-access-view footer { *zoom: 1; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2b2b2b), color-stop(100%, #383838)); background-image: -webkit-linear-gradient(#2b2b2b, #383838); background-image: -moz-linear-gradient(#2b2b2b, #383838); background-image: -o-linear-gradient(#2b2b2b, #383838); background-image: linear-gradient(#2b2b2b, #383838); -webkit-border-radius: 0 0 10px 10px; -moz-border-radius: 0 0 10px 10px; -ms-border-radius: 0 0 10px 10px; -o-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px; }
-/* line 147, ../compass/sass/crystal.yexley.net.scss */
-#login-view footer *, #request-access-view footer * { float: right; }
-/* line 28, ../compass/sass/_grid.scss */
-#login-view footer:before, #login-view footer:after, #request-access-view footer:before, #request-access-view footer:after { content: ""; display: table; }
-/* line 32, ../compass/sass/_grid.scss */
-#login-view footer:after, #request-access-view footer:after { clear: both; }
-/* line 155, ../compass/sass/crystal.yexley.net.scss */
-#login-view footer input[type="button"], #request-access-view footer input[type="button"] { border: none; color: #bbbbbb; height: 32px; padding: 0 20px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #242424), color-stop(100%, #050505)); background-image: -webkit-linear-gradient(#242424, #050505); background-image: -moz-linear-gradient(#242424, #050505); background-image: -o-linear-gradient(#242424, #050505); background-image: linear-gradient(#242424, #050505); -webkit-border-radius: 16px; -moz-border-radius: 16px; -ms-border-radius: 16px; -o-border-radius: 16px; border-radius: 16px; }
-/* line 164, ../compass/sass/crystal.yexley.net.scss */
-#login-view footer input[type="button"]:hover, #request-access-view footer input[type="button"]:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #050505), color-stop(100%, #242424)); background-image: -webkit-linear-gradient(#050505, #242424); background-image: -moz-linear-gradient(#050505, #242424); background-image: -o-linear-gradient(#050505, #242424); background-image: linear-gradient(#050505, #242424); }
+/* line 77, ../compass/sass/crystal.yexley.net.scss */
+.swipe-wrap { overflow: hidden; position: relative; }
+/* line 81, ../compass/sass/crystal.yexley.net.scss */
+.swipe-wrap > div, .swipe-wrap > section { float: left; width: 100%; position: relative; }
 
-@media (min-width: 768px) { /* line 172, ../compass/sass/crystal.yexley.net.scss */
+/*
+#home-options {
+	padding: 10% 0;
+
+	li {
+		padding: 0.15em 5%;
+		text-align: center;
+	}
+
+	a.button {
+		color: $base-color;
+		display: block;
+		font-size: 1.75em;
+		font-weight: 200;
+		margin: 20px auto 50px auto;
+		padding: 15px 0;
+		text-align: center;
+		text-decoration: none;
+
+		@include background-image(linear-gradient(adjust-lightness($link-color, 15%), adjust-lightness($link-color, -15%)));
+		@include border-radius(7px);
+		@include box-shadow(2px 3px 10px 1px rgba(0, 0, 0, 1)); // drop shadow
+		@include text-shadow(1px 1px 2px rgba($base-color, 0.5));
+
+		&:hover {
+			@include background-image(linear-gradient(adjust-lightness($link-color, -15%), adjust-lightness($link-color, 15%)));
+		}
+	}
+}
+
+#login-view, #request-access-view {
+	margin: 3%;
+
+	@include border-radius(10px);
+	@include background-image(linear-gradient(adjust-lightness($base-color, 25%), adjust-lightness($base-color, 20%)));
+	@include box-shadow(2px 3px 10px 1px rgba(0, 0, 0, 0.75)); // drop shadow
+
+	header, footer {
+		padding: 10px 20px;
+	}
+
+	section {
+		padding: 20px;
+	}
+
+	header {
+		@include background-image(linear-gradient(adjust-lightness($base-color, 20%), adjust-lightness($base-color, 15%)));
+		@include border-radius(10px 10px 0 0);
+
+		h2 {
+			margin: 0;
+
+			@include text-shadow(2px 2px 3px rgba($base-color, 0.85));
+		}
+	}
+
+	li {
+		margin: 0 0 0.75em 0;
+	}
+
+	label {
+		display: block;
+
+		@include text-shadow(1px 1px 2px rgba($base-color, 0.5));
+	}
+
+	input[type="text"], input[type="password"], input[type="email"] {
+		background: adjust-lightness($base-color, 6%);
+		border: none;
+		color: adjust-lightness($base-color, 50%);
+		padding: 0.2em 0.5em 0.25em 0.4em;
+		width: 93%;
+
+		@include border-radius(5px);
+	}
+
+	footer {
+		* {
+			float: right;
+		}
+
+		@include clearfix;
+		@include background-image(linear-gradient(adjust-lightness($base-color, 15%), adjust-lightness($base-color, 20%)));
+		@include border-radius(0 0 10px 10px);
+
+		input[type="button"] {
+			border: none;
+			color: $base-font-color;
+			height: 32px;
+			padding: 0 20px;
+
+			@include background-image(linear-gradient(adjust-lightness($base-color, 12%), $base-color));
+			@include border-radius(16px);
+
+			&:hover {
+				@include background-image(linear-gradient($base-color, adjust-lightness($base-color, 12%)));
+			}
+		}
+	}
+}
+*/
+@media (min-width: 768px) { /* line 191, ../compass/sass/crystal.yexley.net.scss */
   header#top { margin: 0 0 20px 0; }
-  /* line 176, ../compass/sass/crystal.yexley.net.scss */
-  #home-options { display: inline; float: left; width: 31.25%; margin: 0 1.04167%; margin-left: 34.375%; }
-  /* line 180, ../compass/sass/crystal.yexley.net.scss */
-  #home-options a.button { width: 80%; }
-  /* line 185, ../compass/sass/crystal.yexley.net.scss */
-  #login-view, #request-access-view { display: inline; float: left; width: 31.25%; margin: 0 1.04167%; margin-left: 34.375%; margin-top: 15%; }
-  /* line 191, ../compass/sass/crystal.yexley.net.scss */
-  #login-view li, #request-access-view li { *zoom: 1; }
-  /* line 28, ../compass/sass/_grid.scss */
-  #login-view li:before, #login-view li:after, #request-access-view li:before, #request-access-view li:after { content: ""; display: table; }
-  /* line 32, ../compass/sass/_grid.scss */
-  #login-view li:after, #request-access-view li:after { clear: both; }
-  /* line 195, ../compass/sass/crystal.yexley.net.scss */
-  #login-view label, #request-access-view label { float: left; width: 35%; }
-  /* line 200, ../compass/sass/crystal.yexley.net.scss */
-  #login-view input[type="text"], #login-view input[type="password"], #login-view input[type="email"], #request-access-view input[type="text"], #request-access-view input[type="password"], #request-access-view input[type="email"] { float: left; margin: 0 0 0 1%; max-width: 55%; } }
+  /* 	#home-options { 		@include column(4); 		@include push(4);  		a.button { 			width: 80%; 		} 	}  	#login-view, #request-access-view { 		@include column(4); 		@include push(4);  		margin-top: 15%;  		li { 			@include clearfix; 		}  		label { 			float: left; 			width: 35%; 		}  		input[type="text"], input[type="password"], input[type="email"] { 			float: left; 			margin: 0 0 0 1%; 			max-width: 55%; 		} 	} */ }

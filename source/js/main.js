@@ -2,7 +2,9 @@ requirejs.config({
 	paths: {
 		"underscore": "lib/underscore",
 		"backbone": "lib/backbone",
-		"swipe": "lib/swipe"
+		"swipe": "lib/swipe",
+		"text": "lib/text",
+		"template": "../templates"
 	},
 	shim: {
 		"underscore": {
