@@ -2,8 +2,9 @@ define([
 	"underscore",
 	"backbone",
 	"swipe",
+	"views/menubar",
 	"text!template/app-view.tmpl.html"
-], function (_, Backbone, Swipe, AppViewTemplate) {
+], function (_, Backbone, Swipe, Menubar, AppViewTemplate) {
 
 	var AppView = Backbone.View.extend({
 		className: "swipe",
@@ -13,15 +14,16 @@ define([
 		},
 
 		initialize: function () {
-			_.bindAll(this, "render", "setPageSize", "setSelectedPage");
+			_.bindAll(this, "render", "setPageSize", "setRequestedPage");
 			this.render();
-			this.setSelectedPage();
+			this.setRequestedPage();
 			this.window.on("resize", this.setPageSize);
-			this.window.on("hashchange", this.setSelectedPage);
+			this.window.on("hashchange", this.setRequestedPage);
 		},
 
 		render: function () {
 			this.window = $(window);
+			this.menubar = new Menubar();
 			var content = $("<div class='swipe-wrap' />").append(AppViewTemplate);
 			this.$el.empty().append(content);
 			this.$el.prependTo("body");
@@ -55,7 +57,7 @@ define([
 			this.$(".page").css({ height: this.window.height(), width: this.window.width() });
 		},
 
-		setSelectedPage: function () {
+		setRequestedPage: function () {
 			if (!this.swiping) {
 				var requestedPage = window.location.hash;
 

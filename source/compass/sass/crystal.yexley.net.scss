@@ -48,9 +48,14 @@ ul.no-bullets {
 	padding: 0;
 }
 
-header#top {
-	margin: 0 0 10px 0;
+nav#menubar {
+	left: 0;
+	// margin: 0 0 10px 0;
 	padding: 3px 20px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 
 	@include background-image(linear-gradient(adjust-lightness($base-color, 20%), $base-color));
 
@@ -64,8 +69,9 @@ header#top {
 	}
 }
 
-#main-content {
-	@include column(12);
+.page {
+	padding: 40px 20px;
+	// @include column(12);
 }
 
 .swipe {

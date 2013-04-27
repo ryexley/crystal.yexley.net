@@ -184,21 +184,21 @@ input:-moz-placeholder { color: #3b3b3b; }
 ul.no-bullets { list-style-type: none; margin: 0; padding: 0; }
 
 /* line 51, ../compass/sass/crystal.yexley.net.scss */
-header#top { margin: 0 0 10px 0; padding: 3px 20px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383838), color-stop(100%, #050505)); background-image: -webkit-linear-gradient(#383838, #050505); background-image: -moz-linear-gradient(#383838, #050505); background-image: -o-linear-gradient(#383838, #050505); background-image: linear-gradient(#383838, #050505); }
-/* line 57, ../compass/sass/crystal.yexley.net.scss */
-header#top a#header-home-link { color: #888; }
-/* line 61, ../compass/sass/crystal.yexley.net.scss */
-header#top h1#title { display: inline-block; margin: 0; }
+nav#menubar { left: 0; padding: 3px 20px; position: absolute; top: 0; width: 100%; z-index: 2; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383838), color-stop(100%, #050505)); background-image: -webkit-linear-gradient(#383838, #050505); background-image: -moz-linear-gradient(#383838, #050505); background-image: -o-linear-gradient(#383838, #050505); background-image: linear-gradient(#383838, #050505); }
+/* line 62, ../compass/sass/crystal.yexley.net.scss */
+nav#menubar a#header-home-link { color: #888; }
+/* line 66, ../compass/sass/crystal.yexley.net.scss */
+nav#menubar h1#title { display: inline-block; margin: 0; }
 
-/* line 67, ../compass/sass/crystal.yexley.net.scss */
-#main-content { display: inline; float: left; width: 97.91667%; margin: 0 1.04167%; }
-
-/* line 71, ../compass/sass/crystal.yexley.net.scss */
-.swipe { overflow: hidden; visibility: hidden; position: relative; }
+/* line 72, ../compass/sass/crystal.yexley.net.scss */
+.page { padding: 40px 20px; }
 
 /* line 77, ../compass/sass/crystal.yexley.net.scss */
+.swipe { overflow: hidden; visibility: hidden; position: relative; }
+
+/* line 83, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap { overflow: hidden; position: relative; }
-/* line 81, ../compass/sass/crystal.yexley.net.scss */
+/* line 87, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap > div, .swipe-wrap > section { float: left; width: 100%; position: relative; }
 
 /*
@@ -302,6 +302,6 @@ header#top h1#title { display: inline-block; margin: 0; }
 	}
 }
 */
-@media (min-width: 768px) { /* line 191, ../compass/sass/crystal.yexley.net.scss */
+@media (min-width: 768px) { /* line 197, ../compass/sass/crystal.yexley.net.scss */
   header#top { margin: 0 0 20px 0; }
   /* 	#home-options { 		@include column(4); 		@include push(4);  		a.button { 			width: 80%; 		} 	}  	#login-view, #request-access-view { 		@include column(4); 		@include push(4);  		margin-top: 15%;  		li { 			@include clearfix; 		}  		label { 			float: left; 			width: 35%; 		}  		input[type="text"], input[type="password"], input[type="email"] { 			float: left; 			margin: 0 0 0 1%; 			max-width: 55%; 		} 	} */ }
