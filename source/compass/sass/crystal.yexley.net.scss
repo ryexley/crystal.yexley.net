@@ -2,6 +2,8 @@
 @import "normalize";
 @import "grid";
 
+@import url("http://fonts.googleapis.com/css?family=Meddon");
+
 $base-color: adjust-lightness(#000, 2%);
 $base-font-color: #bbb;
 $link-color: #00b7ff;
@@ -57,21 +59,51 @@ nav#menubar {
 	width: 100%;
 	z-index: 2;
 
-	@include background-image(linear-gradient(adjust-lightness($base-color, 20%), $base-color));
+	@include background-image(linear-gradient(adjust-lightness(rgba(0,0,0,.7), 30%), rgba(0,0,0,.7)));
 
 	a#header-home-link {
-		color: #888;
+		font-family: Meddon, sans-serif;
+		color: #099;
 	}
 
 	h1#title {
 		display: inline-block;
 		margin: 0;
 	}
+
+	ul {
+		float: right;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			float: left;
+
+			a {
+				margin: auto 0;
+				padding: 0 15px;
+			}
+		}
+	}
 }
 
 .page {
 	padding: 40px 20px;
 	// @include column(12);
+}
+
+#home {
+	background: url(http://lorempixel.com/1800/1560/nature) no-repeat center center fixed;
+	@include background-size(cover);
+}
+
+#portfolio {
+	background: #969;
+}
+
+#contact {
+	background: #099;
 }
 
 .swipe {
