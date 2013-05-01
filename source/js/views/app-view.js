@@ -3,8 +3,10 @@ define([
 	"backbone",
 	"swipe",
 	"views/menubar",
+	"views/home-view",
+	"views/portfolio-view",
 	"text!template/app-view.tmpl.html"
-], function (_, Backbone, Swipe, Menubar, AppViewTemplate) {
+], function (_, Backbone, Swipe, Menubar, HomeView, PortfolioView, AppViewTemplate) {
 
 	var AppView = Backbone.View.extend({
 		className: "swipe",
@@ -25,12 +27,17 @@ define([
 		},
 
 		render: function () {
+			var self = this;
 			this.menubar = new Menubar();
+			this.menubarEl = $("#menubar");
 			var content = $("<div class='swipe-wrap' />").append(AppViewTemplate);
 			this.$el.empty().append(content);
 			this.$el.prependTo("body");
+			this.homeView = new HomeView();
+			this.portfolioView = new PortfolioView();
 			this.setupPager();
-			this.window.trigger("resize");
+			// HACK: trigger window resizing to call setupPageSize once initial rendering is done
+			setTimeout(function () { self.window.trigger("resize"); }, 150);
 		},
 
 		setupPager: function () {
@@ -56,7 +63,13 @@ define([
 		},
 
 		setPageSize: function (e) {
-			this.$(".page").css({ height: this.window.height(), width: this.window.width() });
+			this.$(".page").css({
+				height: this.window.height(),
+				paddingTop: this.menubarEl.height(),
+				width: this.window.width()
+			});
+
+			$("#home > #intro").css({ top: this.menubarEl.height() + "px" });
 		},
 
 		setRequestedPage: function () {

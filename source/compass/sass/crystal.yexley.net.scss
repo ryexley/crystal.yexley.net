@@ -17,6 +17,21 @@ $visited-link-color: adjust-lightness($link-color, -10%);
 	@include box-sizing(border-box);
 }
 
+.clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+		// Fixes Opera/contenteditable bug:
+		// http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
 body {
 	background: adjust-lightness($base-color, 10%);
 	color: $base-font-color;
@@ -113,17 +128,48 @@ nav#menubar {
 }
 
 .page {
-	padding: 40px 20px;
-	// @include column(12);
+	overflow-x: hidden;
+	overflow-y: auto;
+	overflow-y: touch;
+	-webkit-overflow-scrolling: touch;
 }
 
 #home {
 	background: url(http://lorempixel.com/1800/1560/nature) no-repeat center center fixed;
 	@include background-size(cover);
+
+	#intro {
+		background: rgba(0, 0, 0, .7);
+		bottom: 0;
+		// height: 100%;
+		margin: 20px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		overflow-y: touch;
+		padding: 20px;
+		position: absolute;
+		left: 0;
+		width: 50%;
+		-webkit-overflow-scrolling: touch;
+
+		h1 {
+			margin: 0 0 10px 0;
+		}
+	}
 }
 
 #portfolio {
 	background: #969;
+
+	ul {
+		padding: 20px;
+
+		li {
+			float: left;
+			margin: 1em;
+			text-align: center;
+		}
+	}
 }
 
 #contact {

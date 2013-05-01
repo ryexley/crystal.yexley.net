@@ -157,68 +157,83 @@ body:after { clear: both; }
 * { font-weight: 100; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /* line 20, ../compass/sass/crystal.yexley.net.scss */
+.clearfix { *zoom: 1; }
+/* line 23, ../compass/sass/crystal.yexley.net.scss */
+.clearfix:before, .clearfix:after { display: table; content: ""; line-height: 0; }
+/* line 30, ../compass/sass/crystal.yexley.net.scss */
+.clearfix:after { clear: both; }
+
+/* line 35, ../compass/sass/crystal.yexley.net.scss */
 body { background: #1f1f1f; color: #bbbbbb; font-family: "Ubuntu", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", Tahoma, Arial, Helvetica, Sans-Serif; overflow: hidden; }
 
-/* line 27, ../compass/sass/crystal.yexley.net.scss */
+/* line 42, ../compass/sass/crystal.yexley.net.scss */
 a, a:link { color: #00b7ff; }
-/* line 30, ../compass/sass/crystal.yexley.net.scss */
+/* line 45, ../compass/sass/crystal.yexley.net.scss */
 a:hover, a:link:hover { color: #eeeeee; }
-/* line 34, ../compass/sass/crystal.yexley.net.scss */
+/* line 49, ../compass/sass/crystal.yexley.net.scss */
 a:visited, a:link:visited { color: #0092cc; }
 
-/* line 39, ../compass/sass/crystal.yexley.net.scss */
+/* line 54, ../compass/sass/crystal.yexley.net.scss */
 h1, h2, h3, h4, h5, h6 { font-family: "Princess Sofia"; font-weight: 100; }
 
-/* line 44, ../compass/sass/crystal.yexley.net.scss */
+/* line 59, ../compass/sass/crystal.yexley.net.scss */
 ::-webkit-input-placeholder { color: #3b3b3b; }
 
-/* line 45, ../compass/sass/crystal.yexley.net.scss */
+/* line 60, ../compass/sass/crystal.yexley.net.scss */
 ::-moz-placeholder { color: #3b3b3b; }
 
-/* line 46, ../compass/sass/crystal.yexley.net.scss */
+/* line 61, ../compass/sass/crystal.yexley.net.scss */
 :-ms-input-placeholder { color: #3b3b3b; }
 
-/* line 47, ../compass/sass/crystal.yexley.net.scss */
+/* line 62, ../compass/sass/crystal.yexley.net.scss */
 input:-moz-placeholder { color: #3b3b3b; }
 
-/* line 49, ../compass/sass/crystal.yexley.net.scss */
+/* line 64, ../compass/sass/crystal.yexley.net.scss */
 ul.no-bullets { list-style-type: none; margin: 0; padding: 0; }
 
-/* line 55, ../compass/sass/crystal.yexley.net.scss */
+/* line 70, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar { left: 0; padding: 0 20px; position: absolute; top: 0; width: 100%; z-index: 2; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(77, 77, 77, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7))); background-image: -webkit-linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); background-image: -moz-linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); background-image: -o-linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); background-image: linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); }
-/* line 66, ../compass/sass/crystal.yexley.net.scss */
+/* line 81, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar a#header-home-link { color: #fff; font-family: "Princess Sofia"; }
-/* line 71, ../compass/sass/crystal.yexley.net.scss */
+/* line 86, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar h1#title { display: inline-block; margin: 5px 0 7px 0; }
-/* line 76, ../compass/sass/crystal.yexley.net.scss */
-nav#menubar #subtitle { left: 210px; position: absolute; top: 10px; }
-/* line 82, ../compass/sass/crystal.yexley.net.scss */
-nav#menubar ul { height: 100%; list-style-type: none; margin: 0; padding: 0; position: absolute; right: 20px; top: 0; }
 /* line 91, ../compass/sass/crystal.yexley.net.scss */
+nav#menubar #subtitle { left: 210px; position: absolute; top: 10px; }
+/* line 97, ../compass/sass/crystal.yexley.net.scss */
+nav#menubar ul { height: 100%; list-style-type: none; margin: 0; padding: 0; position: absolute; right: 20px; top: 0; }
+/* line 106, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar ul li { display: table; float: left; height: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(77, 77, 77, 0.1))); background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); }
-/* line 98, ../compass/sass/crystal.yexley.net.scss */
+/* line 113, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar ul li a { color: #ddd; display: table-cell; height: 100%; margin: auto 0; padding: 0 1.5em; text-decoration: none; vertical-align: middle; }
-/* line 107, ../compass/sass/crystal.yexley.net.scss */
+/* line 122, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar ul li a:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(77, 77, 77, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.25))); background-image: -webkit-linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); background-image: -moz-linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); background-image: -o-linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); background-image: linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); }
 
-/* line 115, ../compass/sass/crystal.yexley.net.scss */
-.page { padding: 40px 20px; }
+/* line 130, ../compass/sass/crystal.yexley.net.scss */
+.page { overflow-x: hidden; overflow-y: auto; overflow-y: touch; -webkit-overflow-scrolling: touch; }
 
-/* line 120, ../compass/sass/crystal.yexley.net.scss */
+/* line 137, ../compass/sass/crystal.yexley.net.scss */
 #home { background: url(http://lorempixel.com/1800/1560/nature) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+/* line 141, ../compass/sass/crystal.yexley.net.scss */
+#home #intro { background: rgba(0, 0, 0, 0.7); bottom: 0; margin: 20px; overflow-x: hidden; overflow-y: auto; overflow-y: touch; padding: 20px; position: absolute; left: 0; width: 50%; -webkit-overflow-scrolling: touch; }
+/* line 155, ../compass/sass/crystal.yexley.net.scss */
+#home #intro h1 { margin: 0 0 10px 0; }
 
-/* line 125, ../compass/sass/crystal.yexley.net.scss */
+/* line 161, ../compass/sass/crystal.yexley.net.scss */
 #portfolio { background: #969; }
+/* line 164, ../compass/sass/crystal.yexley.net.scss */
+#portfolio ul { padding: 20px; }
+/* line 167, ../compass/sass/crystal.yexley.net.scss */
+#portfolio ul li { float: left; margin: 1em; text-align: center; }
 
-/* line 129, ../compass/sass/crystal.yexley.net.scss */
+/* line 175, ../compass/sass/crystal.yexley.net.scss */
 #contact { background: #099; }
 
-/* line 133, ../compass/sass/crystal.yexley.net.scss */
+/* line 179, ../compass/sass/crystal.yexley.net.scss */
 .swipe { overflow: hidden; visibility: hidden; position: relative; }
 
-/* line 139, ../compass/sass/crystal.yexley.net.scss */
+/* line 185, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap { overflow: hidden; position: relative; }
-/* line 143, ../compass/sass/crystal.yexley.net.scss */
+/* line 189, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap > div, .swipe-wrap > section { float: left; width: 100%; position: relative; }
 
 /*
@@ -322,6 +337,6 @@ nav#menubar ul li a:hover { background-image: -webkit-gradient(linear, 50% 0%, 5
 	}
 }
 */
-@media (min-width: 768px) { /* line 253, ../compass/sass/crystal.yexley.net.scss */
+@media (min-width: 768px) { /* line 299, ../compass/sass/crystal.yexley.net.scss */
   header#top { margin: 0 0 20px 0; }
   /* 	#home-options { 		@include column(4); 		@include push(4);  		a.button { 			width: 80%; 		} 	}  	#login-view, #request-access-view { 		@include column(4); 		@include push(4);  		margin-top: 15%;  		li { 			@include clearfix; 		}  		label { 			float: left; 			width: 35%; 		}  		input[type="text"], input[type="password"], input[type="email"] { 			float: left; 			margin: 0 0 0 1%; 			max-width: 55%; 		} 	} */ }

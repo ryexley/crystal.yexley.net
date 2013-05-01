@@ -1,4 +1,5 @@
 requirejs.config({
+	urlArgs: "v=" + ( new Date() ).getTime(),
 	paths: {
 		"underscore": "lib/underscore",
 		"backbone": "lib/backbone",
