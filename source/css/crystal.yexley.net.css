@@ -212,28 +212,38 @@ nav#menubar ul li a:hover { background-image: -webkit-gradient(linear, 50% 0%, 5
 .page { overflow-x: hidden; overflow-y: auto; overflow-y: touch; -webkit-overflow-scrolling: touch; }
 
 /* line 137, ../compass/sass/crystal.yexley.net.scss */
-#home { background: url(http://lorempixel.com/1800/1560/nature) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-/* line 141, ../compass/sass/crystal.yexley.net.scss */
-#home #intro { background: rgba(0, 0, 0, 0.7); bottom: 0; margin: 20px; overflow-x: hidden; overflow-y: auto; overflow-y: touch; padding: 20px; position: absolute; left: 0; width: 50%; -webkit-overflow-scrolling: touch; }
-/* line 155, ../compass/sass/crystal.yexley.net.scss */
-#home #intro h1 { margin: 0 0 10px 0; }
+.scrollable { overflow-x: hidden; overflow-y: auto; overflow-y: touch; -webkit-overflow-scrolling: touch; }
 
-/* line 161, ../compass/sass/crystal.yexley.net.scss */
-#portfolio { background: #969; }
-/* line 164, ../compass/sass/crystal.yexley.net.scss */
-#portfolio ul { padding: 20px; }
+/* line 144, ../compass/sass/crystal.yexley.net.scss */
+.fade { bottom: 0; height: 150px; left: 0; position: absolute; width: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(77, 77, 77, 0)), color-stop(100%, rgba(0, 0, 0, 0.7))); background-image: -webkit-linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); background-image: -moz-linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); background-image: -o-linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); background-image: linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); }
+
+/* line 154, ../compass/sass/crystal.yexley.net.scss */
+#home { background: url(http://farm8.staticflickr.com/7078/7162621982_f866648653_k.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+/* line 158, ../compass/sass/crystal.yexley.net.scss */
+#home #intro { background: rgba(0, 0, 0, 0.7); bottom: 0; margin: 20px; overflow: hidden; position: absolute; left: 0; width: 50%; }
 /* line 167, ../compass/sass/crystal.yexley.net.scss */
+#home #intro h1 { margin: 10px 20px 0 20px; }
+/* line 171, ../compass/sass/crystal.yexley.net.scss */
+#home #intro #intro-content { padding: 0 20px; }
+/* line 174, ../compass/sass/crystal.yexley.net.scss */
+#home #intro #intro-content .spacer { height: 100px; }
+
+/* line 181, ../compass/sass/crystal.yexley.net.scss */
+#portfolio { background: #969; }
+/* line 184, ../compass/sass/crystal.yexley.net.scss */
+#portfolio ul { padding: 20px; }
+/* line 187, ../compass/sass/crystal.yexley.net.scss */
 #portfolio ul li { float: left; margin: 1em; text-align: center; }
 
-/* line 175, ../compass/sass/crystal.yexley.net.scss */
+/* line 195, ../compass/sass/crystal.yexley.net.scss */
 #contact { background: #099; }
 
-/* line 179, ../compass/sass/crystal.yexley.net.scss */
+/* line 199, ../compass/sass/crystal.yexley.net.scss */
 .swipe { overflow: hidden; visibility: hidden; position: relative; }
 
-/* line 185, ../compass/sass/crystal.yexley.net.scss */
+/* line 205, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap { overflow: hidden; position: relative; }
-/* line 189, ../compass/sass/crystal.yexley.net.scss */
+/* line 209, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap > div, .swipe-wrap > section { float: left; width: 100%; position: relative; }
 
 /*
@@ -337,6 +347,6 @@ nav#menubar ul li a:hover { background-image: -webkit-gradient(linear, 50% 0%, 5
 	}
 }
 */
-@media (min-width: 768px) { /* line 299, ../compass/sass/crystal.yexley.net.scss */
+@media (min-width: 768px) { /* line 319, ../compass/sass/crystal.yexley.net.scss */
   header#top { margin: 0 0 20px 0; }
   /* 	#home-options { 		@include column(4); 		@include push(4);  		a.button { 			width: 80%; 		} 	}  	#login-view, #request-access-view { 		@include column(4); 		@include push(4);  		margin-top: 15%;  		li { 			@include clearfix; 		}  		label { 			float: left; 			width: 35%; 		}  		input[type="text"], input[type="password"], input[type="email"] { 			float: left; 			margin: 0 0 0 1%; 			max-width: 55%; 		} 	} */ }

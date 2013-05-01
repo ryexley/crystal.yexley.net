@@ -11,12 +11,13 @@ define([
 	var AppView = Backbone.View.extend({
 		className: "swipe",
 		attributes: { id: "app-view" },
+		baseWindowTitle: "Crystal Yexley",
 
 		events: {
 		},
 
 		initialize: function () {
-			_.bindAll(this, "render", "setPageSize", "setRequestedPage");
+			_.bindAll(this, "render", "setPageSize", "setRequestedPage", "setPageTitle");
 
 			this.window = $(window);
 			this.window.on("resize", this.setPageSize);
@@ -36,6 +37,7 @@ define([
 			this.homeView = new HomeView();
 			this.portfolioView = new PortfolioView();
 			this.setupPager();
+			this.setPageTitle();
 			// HACK: trigger window resizing to call setupPageSize once initial rendering is done
 			setTimeout(function () { self.window.trigger("resize"); }, 150);
 		},
@@ -55,6 +57,7 @@ define([
 					}
 
 					window.location.hash = hash;
+					self.setPageTitle();
 				},
 				transitionEnd: function (index, el) {
 					self.swiping = false;
@@ -70,6 +73,7 @@ define([
 			});
 
 			$("#home > #intro").css({ top: this.menubarEl.height() + "px" });
+			$("#home > #intro > #intro-content").css({ height: $("#home > #intro").height() - $("#home > #intro > h1").height() + "px" });
 		},
 
 		setRequestedPage: function () {
@@ -85,6 +89,11 @@ define([
 					}
 				}
 			}
+		},
+
+		setPageTitle: function () {
+			var currentPage = this.$("[data-index=\"" + this.pages.getPos() + "\"]");
+			$(document).prop("title", this.baseWindowTitle + " | " + currentPage.data("title"));
 		}
 	});
 

@@ -134,26 +134,46 @@ nav#menubar {
 	-webkit-overflow-scrolling: touch;
 }
 
+.scrollable {
+	overflow-x: hidden;
+	overflow-y: auto;
+	overflow-y: touch;
+	-webkit-overflow-scrolling: touch;
+}
+
+.fade {
+	bottom: 0;
+	height: 150px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+
+	@include background-image(linear-gradient(adjust-lightness(rgba(0,0,0,0), 30%), rgba(0,0,0,.7)));
+}
+
 #home {
-	background: url(http://lorempixel.com/1800/1560/nature) no-repeat center center fixed;
+	background: url(http://farm8.staticflickr.com/7078/7162621982_f866648653_k.jpg) no-repeat center center fixed;
 	@include background-size(cover);
 
 	#intro {
 		background: rgba(0, 0, 0, .7);
 		bottom: 0;
-		// height: 100%;
 		margin: 20px;
-		overflow-x: hidden;
-		overflow-y: auto;
-		overflow-y: touch;
-		padding: 20px;
+		overflow: hidden;
 		position: absolute;
 		left: 0;
 		width: 50%;
-		-webkit-overflow-scrolling: touch;
 
 		h1 {
-			margin: 0 0 10px 0;
+			margin: 10px 20px 0 20px;
+		}
+
+		#intro-content {
+			padding: 0 20px;
+
+			.spacer {
+				height: 100px;
+			}
 		}
 	}
 }
