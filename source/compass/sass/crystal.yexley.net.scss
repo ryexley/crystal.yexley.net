@@ -2,7 +2,7 @@
 @import "normalize";
 @import "grid";
 
-@import url("http://fonts.googleapis.com/css?family=Meddon");
+@import url("http://fonts.googleapis.com/css?family=Princess+Sofia|Habibi|Open+Sans|Junge|Oldenburg");
 
 $base-color: adjust-lightness(#000, 2%);
 $base-font-color: #bbb;
@@ -21,6 +21,7 @@ body {
 	background: adjust-lightness($base-color, 10%);
 	color: $base-font-color;
 	font-family: "Ubuntu", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", Tahoma, Arial, Helvetica, Sans-Serif;
+	overflow: hidden;
 }
 
 a, a:link {
@@ -36,6 +37,7 @@ a, a:link {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: "Princess Sofia";
 	font-weight: 100;
 }
 
@@ -53,7 +55,7 @@ ul.no-bullets {
 nav#menubar {
 	left: 0;
 	// margin: 0 0 10px 0;
-	padding: 3px 20px;
+	padding: 0 20px;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -62,27 +64,49 @@ nav#menubar {
 	@include background-image(linear-gradient(adjust-lightness(rgba(0,0,0,.7), 30%), rgba(0,0,0,.7)));
 
 	a#header-home-link {
-		font-family: Meddon, sans-serif;
-		color: #099;
+		color: #fff;
+		font-family: "Princess Sofia";
 	}
 
 	h1#title {
 		display: inline-block;
-		margin: 0;
+		margin: 5px 0 7px 0;
+	}
+
+	#subtitle {
+		left: 210px;
+		position: absolute;
+		top: 10px;
 	}
 
 	ul {
-		float: right;
+		height: 100%;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+		position: absolute;
+		right: 20px;
+		top: 0;
 
 		li {
+			display: table;
 			float: left;
+			height: 100%;
+
+			@include background-image(linear-gradient(rgba(0,0,0,.1), adjust-lightness(rgba(0,0,0,.1), 30%)));
 
 			a {
+				color: #ddd;
+				display: table-cell;
+				height: 100%;
 				margin: auto 0;
-				padding: 0 15px;
+				padding: 0 1.5em;
+				text-decoration: none;
+				vertical-align: middle;
+
+				&:hover {
+					@include background-image(linear-gradient(adjust-lightness(rgba(0,0,0,.25), 30%), rgba(0,0,0,.25)));
+				}
 			}
 		}
 	}

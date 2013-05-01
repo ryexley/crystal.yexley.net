@@ -15,20 +15,22 @@ define([
 
 		initialize: function () {
 			_.bindAll(this, "render", "setPageSize", "setRequestedPage");
-			this.render();
-			this.setRequestedPage();
+
+			this.window = $(window);
 			this.window.on("resize", this.setPageSize);
 			this.window.on("hashchange", this.setRequestedPage);
+
+			this.render();
+			this.setRequestedPage();
 		},
 
 		render: function () {
-			this.window = $(window);
 			this.menubar = new Menubar();
 			var content = $("<div class='swipe-wrap' />").append(AppViewTemplate);
 			this.$el.empty().append(content);
 			this.$el.prependTo("body");
-			this.setPageSize();
 			this.setupPager();
+			this.window.trigger("resize");
 		},
 
 		setupPager: function () {
