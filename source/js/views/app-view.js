@@ -5,8 +5,9 @@ define([
 	"views/menubar",
 	"views/home-view",
 	"views/portfolio-view",
+	"views/contact-view",
 	"text!template/app-view.tmpl.html"
-], function (_, Backbone, Swipe, Menubar, HomeView, PortfolioView, AppViewTemplate) {
+], function (_, Backbone, Swipe, Menubar, HomeView, PortfolioView, ContactView, AppViewTemplate) {
 
 	var AppView = Backbone.View.extend({
 		className: "swipe",
@@ -36,6 +37,7 @@ define([
 			this.$el.prependTo("body");
 			this.homeView = new HomeView();
 			this.portfolioView = new PortfolioView();
+			this.contactView = new ContactView();
 			this.setupPager();
 			this.setPageTitle();
 			// HACK: trigger window resizing to call setupPageSize once initial rendering is done

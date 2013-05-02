@@ -33,10 +33,13 @@ $visited-link-color: adjust-lightness($link-color, -10%);
 }
 
 body {
-	background: adjust-lightness($base-color, 10%);
+	// background: adjust-lightness($base-color, 10%);
+	background: url(http://farm8.staticflickr.com/7078/7162621982_f866648653_k.jpg) no-repeat center center fixed;
 	color: $base-font-color;
 	font-family: "Ubuntu", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", Tahoma, Arial, Helvetica, Sans-Serif;
 	overflow: hidden;
+
+	@include background-size(cover);
 }
 
 a, a:link {
@@ -91,7 +94,7 @@ nav#menubar {
 	#subtitle {
 		left: 210px;
 		position: absolute;
-		top: 10px;
+		top: 2em;
 	}
 
 	ul {
@@ -152,9 +155,6 @@ nav#menubar {
 }
 
 #home {
-	background: url(http://farm8.staticflickr.com/7078/7162621982_f866648653_k.jpg) no-repeat center center fixed;
-	@include background-size(cover);
-
 	#intro {
 		background: rgba(0, 0, 0, .7);
 		bottom: 0;
@@ -179,8 +179,6 @@ nav#menubar {
 }
 
 #portfolio {
-	background: #969;
-
 	ul {
 		padding: 20px;
 
@@ -193,7 +191,6 @@ nav#menubar {
 }
 
 #contact {
-	background: #099;
 }
 
 .swipe {
@@ -213,143 +210,8 @@ nav#menubar {
     }
 }
 
-/*
-#home-options {
-	padding: 10% 0;
-
-	li {
-		padding: 0.15em 5%;
-		text-align: center;
-	}
-
-	a.button {
-		color: $base-color;
-		display: block;
-		font-size: 1.75em;
-		font-weight: 200;
-		margin: 20px auto 50px auto;
-		padding: 15px 0;
-		text-align: center;
-		text-decoration: none;
-
-		@include background-image(linear-gradient(adjust-lightness($link-color, 15%), adjust-lightness($link-color, -15%)));
-		@include border-radius(7px);
-		@include box-shadow(2px 3px 10px 1px rgba(0, 0, 0, 1)); // drop shadow
-		@include text-shadow(1px 1px 2px rgba($base-color, 0.5));
-
-		&:hover {
-			@include background-image(linear-gradient(adjust-lightness($link-color, -15%), adjust-lightness($link-color, 15%)));
-		}
-	}
-}
-
-#login-view, #request-access-view {
-	margin: 3%;
-
-	@include border-radius(10px);
-	@include background-image(linear-gradient(adjust-lightness($base-color, 25%), adjust-lightness($base-color, 20%)));
-	@include box-shadow(2px 3px 10px 1px rgba(0, 0, 0, 0.75)); // drop shadow
-
-	header, footer {
-		padding: 10px 20px;
-	}
-
-	section {
-		padding: 20px;
-	}
-
-	header {
-		@include background-image(linear-gradient(adjust-lightness($base-color, 20%), adjust-lightness($base-color, 15%)));
-		@include border-radius(10px 10px 0 0);
-
-		h2 {
-			margin: 0;
-
-			@include text-shadow(2px 2px 3px rgba($base-color, 0.85));
-		}
-	}
-
-	li {
-		margin: 0 0 0.75em 0;
-	}
-
-	label {
-		display: block;
-
-		@include text-shadow(1px 1px 2px rgba($base-color, 0.5));
-	}
-
-	input[type="text"], input[type="password"], input[type="email"] {
-		background: adjust-lightness($base-color, 6%);
-		border: none;
-		color: adjust-lightness($base-color, 50%);
-		padding: 0.2em 0.5em 0.25em 0.4em;
-		width: 93%;
-
-		@include border-radius(5px);
-	}
-
-	footer {
-		* {
-			float: right;
-		}
-
-		@include clearfix;
-		@include background-image(linear-gradient(adjust-lightness($base-color, 15%), adjust-lightness($base-color, 20%)));
-		@include border-radius(0 0 10px 10px);
-
-		input[type="button"] {
-			border: none;
-			color: $base-font-color;
-			height: 32px;
-			padding: 0 20px;
-
-			@include background-image(linear-gradient(adjust-lightness($base-color, 12%), $base-color));
-			@include border-radius(16px);
-
-			&:hover {
-				@include background-image(linear-gradient($base-color, adjust-lightness($base-color, 12%)));
-			}
-		}
-	}
-}
-*/
-
 @media (min-width: 768px) {
 	header#top {
 		margin: 0 0 20px 0;
 	}
-
-/*
-	#home-options {
-		@include column(4);
-		@include push(4);
-
-		a.button {
-			width: 80%;
-		}
-	}
-
-	#login-view, #request-access-view {
-		@include column(4);
-		@include push(4);
-
-		margin-top: 15%;
-
-		li {
-			@include clearfix;
-		}
-
-		label {
-			float: left;
-			width: 35%;
-		}
-
-		input[type="text"], input[type="password"], input[type="email"] {
-			float: left;
-			margin: 0 0 0 1%;
-			max-width: 55%;
-		}
-	}
-*/
 }
