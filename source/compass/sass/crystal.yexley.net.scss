@@ -71,6 +71,7 @@ ul.no-bullets {
 }
 
 nav#menubar {
+	background: rgba(0,0,0,.5);
 	left: 0;
 	// margin: 0 0 10px 0;
 	padding: 0 20px;
@@ -107,6 +108,7 @@ nav#menubar {
 		top: 0;
 
 		li {
+			background: rgba(0,0,0,.2);
 			display: table;
 			float: left;
 			height: 100%;
@@ -123,6 +125,7 @@ nav#menubar {
 				vertical-align: middle;
 
 				&:hover {
+					background: rgba(0,0,0,.25);
 					@include background-image(linear-gradient(adjust-lightness(rgba(0,0,0,.25), 30%), rgba(0,0,0,.25)));
 				}
 			}
