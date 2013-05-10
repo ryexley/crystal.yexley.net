@@ -34,7 +34,8 @@ $visited-link-color: adjust-lightness($link-color, -10%);
 
 body {
 	// background: adjust-lightness($base-color, 10%);
-	background: url(http://farm8.staticflickr.com/7078/7162621982_f866648653_k.jpg) no-repeat center center fixed;
+	// background: url(http://farm8.staticflickr.com/7078/7162621982_f866648653_k.jpg) no-repeat center center fixed;
+	background: url(../images/background.jpg) no-repeat center center fixed;
 	color: $base-font-color;
 	font-family: "Ubuntu", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", Tahoma, Arial, Helvetica, Sans-Serif;
 	overflow: hidden;

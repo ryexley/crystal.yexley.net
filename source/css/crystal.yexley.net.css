@@ -164,80 +164,80 @@ body:after { clear: both; }
 .clearfix:after { clear: both; }
 
 /* line 35, ../compass/sass/crystal.yexley.net.scss */
-body { background: url(http://farm8.staticflickr.com/7078/7162621982_f866648653_k.jpg) no-repeat center center fixed; color: #bbbbbb; font-family: "Ubuntu", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", Tahoma, Arial, Helvetica, Sans-Serif; overflow: hidden; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+body { background: url(../images/background.jpg) no-repeat center center fixed; color: #bbbbbb; font-family: "Ubuntu", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", Tahoma, Arial, Helvetica, Sans-Serif; overflow: hidden; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
-/* line 45, ../compass/sass/crystal.yexley.net.scss */
+/* line 46, ../compass/sass/crystal.yexley.net.scss */
 a, a:link { color: #00b7ff; }
-/* line 48, ../compass/sass/crystal.yexley.net.scss */
+/* line 49, ../compass/sass/crystal.yexley.net.scss */
 a:hover, a:link:hover { color: #eeeeee; }
-/* line 52, ../compass/sass/crystal.yexley.net.scss */
+/* line 53, ../compass/sass/crystal.yexley.net.scss */
 a:visited, a:link:visited { color: #0092cc; }
 
-/* line 57, ../compass/sass/crystal.yexley.net.scss */
+/* line 58, ../compass/sass/crystal.yexley.net.scss */
 h1, h2, h3, h4, h5, h6 { font-family: "Princess Sofia"; font-weight: 100; }
 
-/* line 62, ../compass/sass/crystal.yexley.net.scss */
+/* line 63, ../compass/sass/crystal.yexley.net.scss */
 ::-webkit-input-placeholder { color: #3b3b3b; }
 
-/* line 63, ../compass/sass/crystal.yexley.net.scss */
+/* line 64, ../compass/sass/crystal.yexley.net.scss */
 ::-moz-placeholder { color: #3b3b3b; }
 
-/* line 64, ../compass/sass/crystal.yexley.net.scss */
+/* line 65, ../compass/sass/crystal.yexley.net.scss */
 :-ms-input-placeholder { color: #3b3b3b; }
 
-/* line 65, ../compass/sass/crystal.yexley.net.scss */
+/* line 66, ../compass/sass/crystal.yexley.net.scss */
 input:-moz-placeholder { color: #3b3b3b; }
 
-/* line 67, ../compass/sass/crystal.yexley.net.scss */
+/* line 68, ../compass/sass/crystal.yexley.net.scss */
 ul.no-bullets { list-style-type: none; margin: 0; padding: 0; }
 
-/* line 73, ../compass/sass/crystal.yexley.net.scss */
+/* line 74, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar { background: rgba(0, 0, 0, 0.5); left: 0; padding: 0 20px; position: absolute; top: 0; width: 100%; z-index: 2; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(77, 77, 77, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7))); background-image: -webkit-linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); background-image: -moz-linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); background-image: -o-linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); background-image: linear-gradient(rgba(77, 77, 77, 0.7), rgba(0, 0, 0, 0.7)); }
-/* line 85, ../compass/sass/crystal.yexley.net.scss */
+/* line 86, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar a#header-home-link { color: #fff; font-family: "Princess Sofia"; }
-/* line 90, ../compass/sass/crystal.yexley.net.scss */
+/* line 91, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar h1#title { display: inline-block; margin: 5px 0 7px 0; }
-/* line 95, ../compass/sass/crystal.yexley.net.scss */
+/* line 96, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar #subtitle { left: 210px; position: absolute; top: 2em; }
-/* line 101, ../compass/sass/crystal.yexley.net.scss */
+/* line 102, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar ul { height: 100%; list-style-type: none; margin: 0; padding: 0; position: absolute; right: 20px; top: 0; }
-/* line 110, ../compass/sass/crystal.yexley.net.scss */
+/* line 111, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar ul li { background: rgba(0, 0, 0, 0.2); display: table; float: left; height: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(77, 77, 77, 0.1))); background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(77, 77, 77, 0.1)); }
-/* line 118, ../compass/sass/crystal.yexley.net.scss */
+/* line 119, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar ul li a { color: #ddd; display: table-cell; height: 100%; margin: auto 0; padding: 0 1.5em; text-decoration: none; vertical-align: middle; }
-/* line 127, ../compass/sass/crystal.yexley.net.scss */
+/* line 128, ../compass/sass/crystal.yexley.net.scss */
 nav#menubar ul li a:hover { background: rgba(0, 0, 0, 0.25); background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(77, 77, 77, 0.25)), color-stop(100%, rgba(0, 0, 0, 0.25))); background-image: -webkit-linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); background-image: -moz-linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); background-image: -o-linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); background-image: linear-gradient(rgba(77, 77, 77, 0.25), rgba(0, 0, 0, 0.25)); }
 
-/* line 136, ../compass/sass/crystal.yexley.net.scss */
+/* line 137, ../compass/sass/crystal.yexley.net.scss */
 .page { overflow-x: hidden; overflow-y: auto; overflow-y: touch; -webkit-overflow-scrolling: touch; }
 
-/* line 143, ../compass/sass/crystal.yexley.net.scss */
+/* line 144, ../compass/sass/crystal.yexley.net.scss */
 .scrollable { overflow-x: hidden; overflow-y: auto; overflow-y: touch; -webkit-overflow-scrolling: touch; }
 
-/* line 150, ../compass/sass/crystal.yexley.net.scss */
+/* line 151, ../compass/sass/crystal.yexley.net.scss */
 .fade { bottom: 0; height: 150px; left: 0; position: absolute; width: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(77, 77, 77, 0)), color-stop(100%, rgba(0, 0, 0, 0.7))); background-image: -webkit-linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); background-image: -moz-linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); background-image: -o-linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); background-image: linear-gradient(rgba(77, 77, 77, 0), rgba(0, 0, 0, 0.7)); }
 
-/* line 161, ../compass/sass/crystal.yexley.net.scss */
+/* line 162, ../compass/sass/crystal.yexley.net.scss */
 #home #intro { background: rgba(0, 0, 0, 0.7); bottom: 0; margin: 20px; overflow: hidden; position: absolute; left: 0; width: 50%; }
-/* line 170, ../compass/sass/crystal.yexley.net.scss */
+/* line 171, ../compass/sass/crystal.yexley.net.scss */
 #home #intro h1 { margin: 10px 20px 0 20px; }
-/* line 174, ../compass/sass/crystal.yexley.net.scss */
+/* line 175, ../compass/sass/crystal.yexley.net.scss */
 #home #intro #intro-content { padding: 0 20px; }
-/* line 177, ../compass/sass/crystal.yexley.net.scss */
+/* line 178, ../compass/sass/crystal.yexley.net.scss */
 #home #intro #intro-content .spacer { height: 100px; }
 
-/* line 185, ../compass/sass/crystal.yexley.net.scss */
+/* line 186, ../compass/sass/crystal.yexley.net.scss */
 #portfolio ul { padding: 20px; }
-/* line 188, ../compass/sass/crystal.yexley.net.scss */
+/* line 189, ../compass/sass/crystal.yexley.net.scss */
 #portfolio ul li { float: left; margin: 1em; text-align: center; }
 
-/* line 199, ../compass/sass/crystal.yexley.net.scss */
+/* line 200, ../compass/sass/crystal.yexley.net.scss */
 .swipe { overflow: hidden; visibility: hidden; position: relative; }
 
-/* line 205, ../compass/sass/crystal.yexley.net.scss */
+/* line 206, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap { overflow: hidden; position: relative; }
-/* line 209, ../compass/sass/crystal.yexley.net.scss */
+/* line 210, ../compass/sass/crystal.yexley.net.scss */
 .swipe-wrap > div, .swipe-wrap > section { float: left; width: 100%; position: relative; }
 
-@media (min-width: 768px) { /* line 217, ../compass/sass/crystal.yexley.net.scss */
+@media (min-width: 768px) { /* line 218, ../compass/sass/crystal.yexley.net.scss */
   header#top { margin: 0 0 20px 0; } }
